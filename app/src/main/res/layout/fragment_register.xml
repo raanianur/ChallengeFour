@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/img_logo_note"/>
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Masukkan Username"/>
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterUsername"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Masukkan Email"/>
+
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_below="@id/etRegisterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Masukkan Password"/>
+
+        <ImageView
+            android:id="@+id/showPassword1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_below="@id/container1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Masukkan Ulang Password"/>
+
+        <ImageView
+            android:id="@+id/showPassword2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Daftar"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

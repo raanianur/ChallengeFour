@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/homeUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Username!"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Logout"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Home"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_baseline_add_circle_outline_24"
+        android:elevation="0dp"/>
+
+</RelativeLayout>
